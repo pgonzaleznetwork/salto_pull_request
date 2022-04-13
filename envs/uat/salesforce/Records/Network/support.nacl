@@ -1,0 +1,49 @@
+salesforce.Network support {
+  fullName = "support"
+  allowInternalUserLogin = false
+  allowMembersToFlag = false
+  changePasswordTemplate = "unfiled$public/CommunityChangePasswordEmailTemplate"
+  disableReputationRecordConversations = true
+  emailSenderAddress = "highjohn83@gmail.com"
+  emailSenderName = "support"
+  enableCustomVFErrorPageOverrides = false
+  enableDirectMessages = true
+  enableGuestChatter = false
+  enableGuestFileAccess = true
+  enableGuestMemberVisibility = false
+  enableInvitation = false
+  enableKnowledgeable = false
+  enableMemberVisibility = false
+  enableNicknameDisplay = true
+  enablePrivateMessages = false
+  enableReputation = false
+  enableShowAllNetworkSettings = false
+  enableSiteAsContainer = true
+  enableTalkingAboutStats = true
+  enableTopicAssignmentRules = true
+  enableTopicSuggestions = false
+  enableUpDownVote = false
+  forgotPasswordTemplate = "unfiled$public/CommunityForgotPasswordEmailTemplate"
+  gatherCustomerSentimentData = false
+  networkMemberGroups = {
+    profile = "admin"
+  }
+  networkPageOverrides = {
+    changePasswordPageOverrideSetting = "Standard"
+    forgotPasswordPageOverrideSetting = "Designer"
+    homePageOverrideSetting = "Designer"
+    loginPageOverrideSetting = "Designer"
+    selfRegProfilePageOverrideSetting = "Designer"
+  }
+  picassoSite = "support1"
+  selfRegistration = false
+  sendWelcomeEmail = true
+  site = salesforce.CustomSite.instance.support
+  status = "UnderConstruction"
+  tabs = {
+    defaultTab = "home"
+    standardTab = "Chatter"
+  }
+  urlPathPrefix = "support"
+  welcomeTemplate = "unfiled$public/CommunityWelcomeEmailTemplate"
+}

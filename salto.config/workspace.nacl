@@ -1,0 +1,5 @@
+workspace {
+  uid = "163dc44b-c663-4f05-8d3b-13b8134c6b65"
+  name = "salto_pull_request"
+  staleStateThresholdMinutes = undefined
+}

@@ -1,0 +1,38 @@
+salesforce.LightningComponentBundle formattedRecipeDisplay {
+  apiVersion = 53
+  isExposed = true
+  targets = {
+    target = [
+      "lightning__AppPage",
+      "lightning__HomePage",
+    ]
+  }
+  fullName = "formattedRecipeDisplay"
+  lwcResources = {
+    lwcResource = [
+      {
+        source = file("salesforce/Records/LightningComponentBundle/formattedRecipeDisplay/formattedRecipeDisplay.js")
+        filePath = "lwc/formattedRecipeDisplay/formattedRecipeDisplay.js"
+      },
+      {
+        source = file("salesforce/Records/LightningComponentBundle/formattedRecipeDisplay/__mocks__/formattedRecipeDisplay.js")
+        filePath = "lwc/formattedRecipeDisplay/__mocks__/formattedRecipeDisplay.js"
+      },
+      {
+        source = file("salesforce/Records/LightningComponentBundle/formattedRecipeDisplay/formattedRecipeDisplay.html")
+        filePath = "lwc/formattedRecipeDisplay/formattedRecipeDisplay.html"
+      },
+    ]
+  }
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.FormattedRecipeDisplayController
+    },
+    {
+      reference = salesforce.LightningComponentBundle.instance.makeASuggestion
+    },
+    {
+      reference = salesforce.StaticResource.instance.highlight
+    },
+  ]
+}

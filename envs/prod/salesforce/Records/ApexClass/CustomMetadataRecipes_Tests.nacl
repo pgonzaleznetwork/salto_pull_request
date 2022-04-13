@@ -1,0 +1,32 @@
+salesforce.ApexClass CustomMetadataRecipes_Tests {
+  apiVersion = 54
+  status = "Active"
+  fullName = "CustomMetadataRecipes_Tests"
+  content = file("salesforce/Records/ApexClass/CustomMetadataRecipes_Tests.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.CustomMetadataUtilties
+    },
+    {
+      reference = salesforce.ApexClass.instance.TestFactory
+    },
+    {
+      reference = salesforce.Bucketed_Picklist__mdt
+    },
+    {
+      reference = salesforce.Bucketed_Picklist__mdt.field.Field__c
+    },
+    {
+      reference = salesforce.Bucketed_Picklist__mdt.field.Object__c
+    },
+    {
+      reference = salesforce.Contact
+    },
+    {
+      reference = salesforce.Contact.field.AttendanceStatus__c
+    },
+    {
+      reference = salesforce.Picklist_Bucket__mdt
+    },
+  ]
+}

@@ -1,0 +1,12 @@
+salesforce.CustomMetadata Bucketed_Picklist_Value_Partial@uuv {
+  label = "Partial"
+  protected = false
+  fullName = "Bucketed_Picklist_Value.Partial"
+  values = [
+    {
+      field = "Picklist_Bucket__c"
+      value = "Not_Attended"
+      type = "xsd:string"
+    },
+  ]
+}

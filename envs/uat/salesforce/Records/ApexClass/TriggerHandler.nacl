@@ -1,0 +1,6 @@
+salesforce.ApexClass TriggerHandler {
+  apiVersion = 54
+  status = "Active"
+  fullName = "TriggerHandler"
+  content = file("salesforce/Records/ApexClass/TriggerHandler.cls")
+}

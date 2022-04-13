@@ -1,0 +1,6 @@
+salesforce.ApexClass TestHelper {
+  apiVersion = 54
+  status = "Active"
+  fullName = "TestHelper"
+  content = file("salesforce/Records/ApexClass/TestHelper.cls")
+}

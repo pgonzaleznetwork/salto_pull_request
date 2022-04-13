@@ -1,0 +1,94 @@
+type salesforce.Contact {
+  salesforce.Picklist Level__c {
+    apiName = "Contact.Level__c"
+    label = "Level"
+    valueSet = [
+      {
+        fullName = "Secondary"
+        default = false
+        label = "Secondary"
+      },
+      {
+        fullName = "Tertiary"
+        default = false
+        label = "Tertiary"
+      },
+      {
+        fullName = "Primary"
+        default = false
+        label = "Primary"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Text Languages__c {
+    apiName = "Contact.Languages__c"
+    label = "Languages"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 100
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Picklist AttendanceStatus__c {
+    apiName = "Contact.AttendanceStatus__c"
+    externalId = false
+    inlineHelpText = "This is only on Contact for expediency"
+    label = "Attendance Status"
+    trackFeedHistory = false
+    valueSet = [
+      {
+        fullName = "Partial"
+        default = false
+        label = "Partial"
+      },
+      {
+        fullName = "Full"
+        default = false
+        label = "Full"
+      },
+      {
+        fullName = "Asleep"
+        default = false
+        label = "Asleep"
+      },
+      {
+        fullName = "Excused Absence"
+        default = false
+        label = "Excused Absence"
+      },
+      {
+        fullName = "Unexcused Absence"
+        default = false
+        label = "Unexcused Absence"
+      },
+    ]
+    sorted = false
+    restricted = true
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+  salesforce.Text ExternalSalesforceId__c {
+    apiName = "Contact.ExternalSalesforceId__c"
+    externalId = true
+    label = "External Salesforce Id"
+    length = 18
+    trackFeedHistory = false
+    unique = false
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+}

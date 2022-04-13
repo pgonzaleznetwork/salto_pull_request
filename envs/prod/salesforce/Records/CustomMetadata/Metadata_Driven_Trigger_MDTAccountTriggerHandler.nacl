@@ -1,0 +1,27 @@
+salesforce.CustomMetadata Metadata_Driven_Trigger_MDTAccountTriggerHandler@uuv {
+  label = "MDTAccountTriggerHandler"
+  protected = false
+  fullName = "Metadata_Driven_Trigger.MDTAccountTriggerHandler"
+  values = [
+    {
+      field = "Class__c"
+      value = "MDTAccountTriggerHandler"
+      type = "xsd:string"
+    },
+    {
+      field = "Enabled__c"
+      value = "true"
+      type = "xsd:boolean"
+    },
+    {
+      field = "Execution_Order__c"
+      value = "2"
+      type = "xsd:double"
+    },
+    {
+      field = "Object__c"
+      value = "Account"
+      type = "xsd:string"
+    },
+  ]
+}

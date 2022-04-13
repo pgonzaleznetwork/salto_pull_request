@@ -1,0 +1,32 @@
+salesforce.LightningComponentBundle formattedDocsViewer {
+  apiVersion = 53
+  isExposed = false
+  fullName = "formattedDocsViewer"
+  lwcResources = {
+    lwcResource = [
+      {
+        source = file("salesforce/Records/LightningComponentBundle/formattedDocsViewer/__mocks__/formattedDocsViewer.js")
+        filePath = "lwc/formattedDocsViewer/__mocks__/formattedDocsViewer.js"
+      },
+      {
+        source = file("salesforce/Records/LightningComponentBundle/formattedDocsViewer/formattedDocsViewer.js")
+        filePath = "lwc/formattedDocsViewer/formattedDocsViewer.js"
+      },
+      {
+        source = file("salesforce/Records/LightningComponentBundle/formattedDocsViewer/formattedDocsViewer.html")
+        filePath = "lwc/formattedDocsViewer/formattedDocsViewer.html"
+      },
+    ]
+  }
+  _generated_dependencies = [
+    {
+      reference = salesforce.StaticResource.instance.documentation
+    },
+    {
+      reference = salesforce.StaticResource.instance.highlight
+    },
+    {
+      reference = salesforce.StaticResource.instance.markdownIt
+    },
+  ]
+}

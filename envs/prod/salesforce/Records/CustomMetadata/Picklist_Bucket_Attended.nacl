@@ -1,0 +1,12 @@
+salesforce.CustomMetadata Picklist_Bucket_Attended@uv {
+  label = "Attended"
+  protected = false
+  fullName = "Picklist_Bucket.Attended"
+  values = [
+    {
+      field = "Bucketed_Picklist__c"
+      value = "Attendance"
+      type = "xsd:string"
+    },
+  ]
+}

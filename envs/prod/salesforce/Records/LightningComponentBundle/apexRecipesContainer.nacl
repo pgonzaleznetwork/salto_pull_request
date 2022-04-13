@@ -1,0 +1,31 @@
+salesforce.LightningComponentBundle apexRecipesContainer {
+  apiVersion = 53
+  isExposed = true
+  targets = {
+    target = [
+      "lightning__AppPage",
+      "lightning__HomePage",
+    ]
+  }
+  fullName = "apexRecipesContainer"
+  lwcResources = {
+    lwcResource = [
+      {
+        source = file("salesforce/Records/LightningComponentBundle/apexRecipesContainer/apexRecipesContainer.html")
+        filePath = "lwc/apexRecipesContainer/apexRecipesContainer.html"
+      },
+      {
+        source = file("salesforce/Records/LightningComponentBundle/apexRecipesContainer/apexRecipesContainer.js")
+        filePath = "lwc/apexRecipesContainer/apexRecipesContainer.js"
+      },
+    ]
+  }
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningComponentBundle.instance.recipeTreeView
+    },
+    {
+      reference = salesforce.LightningComponentBundle.instance.relatedCodeTabs
+    },
+  ]
+}

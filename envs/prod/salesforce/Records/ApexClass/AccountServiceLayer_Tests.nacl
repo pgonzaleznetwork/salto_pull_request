@@ -1,0 +1,26 @@
+salesforce.ApexClass AccountServiceLayer_Tests {
+  apiVersion = 54
+  status = "Active"
+  fullName = "AccountServiceLayer_Tests"
+  content = file("salesforce/Records/ApexClass/AccountServiceLayer_Tests.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.ApexClass.instance.AccountServiceLayer
+    },
+    {
+      reference = salesforce.ApexClass.instance.CanTheUser
+    },
+    {
+      reference = salesforce.ApexClass.instance.TestFactory
+    },
+    {
+      reference = salesforce.ApexClass.instance.TriggerHandler
+    },
+    {
+      reference = salesforce.User
+    },
+  ]
+}

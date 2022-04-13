@@ -1,0 +1,25 @@
+type salesforce.Bucketed_Picklist__mdt {
+  salesforce.Text Object__c {
+    apiName = "Bucketed_Picklist__mdt.Object__c"
+    label = "Object"
+    _required = true
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Field__c {
+    apiName = "Bucketed_Picklist__mdt.Field__c"
+    label = "Field"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    _hidden_value = true
+  }
+}

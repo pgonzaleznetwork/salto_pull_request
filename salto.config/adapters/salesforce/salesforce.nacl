@@ -1,0 +1,88 @@
+salesforce {
+  client = {
+    polling = {
+      interval = 10000
+      timeout = 3600000
+    }
+    deploy = {
+      rollbackOnError = true
+      ignoreWarnings = true
+      purgeOnDelete = false
+      checkOnly = false
+      testLevel = "NoTestRun"
+      runTests = ["Test name", "Other test"]
+      deleteBeforeUpdate = false
+    }
+    retry = {
+      maxAttempts = 5
+      retryDelay = 5000
+      retryStrategy = "NetworkError"
+    }
+    maxConcurrentApiRequests = {
+      total = 35
+      retrieve = 3
+      read = -1
+      list = -1
+      query = 4
+      describe = -1
+      deploy = -1
+    }
+  }
+  fetch = {
+    metadata = {
+      include = [
+        {
+          metadataType = ".*"
+          namespace = ""
+          name = ".*"
+        },
+      ]
+      exclude = [
+        {
+          metadataType = "Report"
+        },
+        {
+          metadataType = "ReportType"
+        },
+        {
+          metadataType = "ReportFolder"
+        },
+        {
+          metadataType = "Dashboard"
+        },
+        {
+          metadataType = "DashboardFolder"
+        },
+        {
+          metadataType = "Profile"
+        },
+        {
+          metadataType = "PermissionSet"
+        },
+        {
+          metadataType = "SiteDotCom"
+        },
+        {
+          metadataType = "EmailTemplate"
+        },
+        {
+          metadataType = "ContentAsset"
+        },
+        {
+          metadataType = "CustomObjectTranslation"
+        },
+        {
+          metadataType = "StandardValueSet"
+          name = "^(AddressCountryCode)|(AddressStateCode)$"
+          namespace = ""
+        },
+        {
+          metadataType = "Layout"
+          name = "CollaborationGroup-Group Layout"
+        },
+      ]
+    }
+    fetchAllCustomSettings = false
+  }
+  maxItemsInRetrieveRequest = 2500
+}

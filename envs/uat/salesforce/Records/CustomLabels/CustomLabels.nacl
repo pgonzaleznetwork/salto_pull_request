@@ -1,0 +1,19 @@
+salesforce.CustomLabels CustomLabels {
+  fullName = "CustomLabels"
+  labels = [
+    {
+      fullName = "Github_username"
+      language = "en_US"
+      protected = true
+      shortDescription = "Github username"
+      value = "trailheadapps"
+    },
+    {
+      fullName = "SLA_Notification_Email"
+      language = "en_US"
+      protected = true
+      shortDescription = "SLA Notification Email"
+      value = "prod@email.com"
+    },
+  ]
+}

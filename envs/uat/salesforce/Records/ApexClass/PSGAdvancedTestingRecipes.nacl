@@ -1,0 +1,29 @@
+salesforce.ApexClass PSGAdvancedTestingRecipes {
+  apiVersion = 54
+  status = "Active"
+  fullName = "PSGAdvancedTestingRecipes"
+  content = file("salesforce/Records/ApexClass/PSGAdvancedTestingRecipes.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.TestFactory
+    },
+    {
+      reference = salesforce.Permission_Set_Group_Testing_Result__mdt
+    },
+    {
+      reference = salesforce.Permission_Set_Group_Testing_Result__mdt.field.Expected_Exception_Match__c
+    },
+    {
+      reference = salesforce.Permission_Set_Group_Testing_Result__mdt.field.Failure_Log_Message__c
+    },
+    {
+      reference = salesforce.Permission_Set_Group_Testing_Result__mdt.field.Permission_Set_Group__c
+    },
+    {
+      reference = salesforce.Permission_Set_Group_Testing_Result__mdt.field.Test_Class_Method_Name__c
+    },
+    {
+      reference = salesforce.User
+    },
+  ]
+}

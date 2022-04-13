@@ -1,0 +1,20 @@
+salesforce.ApexClass MetadataTriggerHandler {
+  apiVersion = 54
+  status = "Active"
+  fullName = "MetadataTriggerHandler"
+  content = file("salesforce/Records/ApexClass/MetadataTriggerHandler.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.MetadataTriggerService
+    },
+    {
+      reference = salesforce.ApexClass.instance.TriggerHandler
+    },
+    {
+      reference = salesforce.Metadata_Driven_Trigger__mdt
+    },
+    {
+      reference = salesforce.Metadata_Driven_Trigger__mdt.field.Class__c
+    },
+  ]
+}

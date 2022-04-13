@@ -1,0 +1,6 @@
+salesforce.UserCriteria support_Customer_Members@vu {
+  fullName = "support.Customer_Members"
+  description = "Member criteria matches customer members"
+  masterLabel = "Customer Members"
+  userTypes = "Customer"
+}

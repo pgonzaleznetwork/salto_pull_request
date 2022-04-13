@@ -1,0 +1,14 @@
+salesforce.ApexClass AuraEnabledRecipes {
+  apiVersion = 54
+  status = "Active"
+  fullName = "AuraEnabledRecipes"
+  content = file("salesforce/Records/ApexClass/AuraEnabledRecipes.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.ApexClass.instance.CanTheUser
+    },
+  ]
+}

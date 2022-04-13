@@ -1,0 +1,12 @@
+salesforce.CustomMetadata Bucketed_Picklist_Value_Asleep@uuv {
+  label = "Asleep"
+  protected = false
+  fullName = "Bucketed_Picklist_Value.Asleep"
+  values = [
+    {
+      field = "Picklist_Bucket__c"
+      value = "Attended"
+      type = "xsd:string"
+    },
+  ]
+}

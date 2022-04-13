@@ -1,0 +1,14 @@
+salesforce.ApexClass AccountServiceLayer {
+  apiVersion = 54
+  status = "Active"
+  fullName = "AccountServiceLayer"
+  content = file("salesforce/Records/ApexClass/AccountServiceLayer.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.ApexClass.instance.CanTheUser
+    },
+  ]
+}

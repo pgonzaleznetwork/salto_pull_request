@@ -1,0 +1,6 @@
+salesforce.ApexClass LogSeverity {
+  apiVersion = 54
+  status = "Active"
+  fullName = "LogSeverity"
+  content = file("salesforce/Records/ApexClass/LogSeverity.cls")
+}

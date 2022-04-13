@@ -1,0 +1,12 @@
+salesforce.CustomMetadata Bucketed_Picklist_Value_Excused_Absence@uuvu {
+  label = "Excused Absence"
+  protected = false
+  fullName = "Bucketed_Picklist_Value.Excused_Absence"
+  values = [
+    {
+      field = "Picklist_Bucket__c"
+      value = "Not_Attended"
+      type = "xsd:string"
+    },
+  ]
+}

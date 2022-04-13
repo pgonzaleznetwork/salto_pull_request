@@ -1,0 +1,27 @@
+type salesforce.Disabled_For__mdt {
+  salesforce.Lookup Metadata_Driven_Trigger__c {
+    apiName = "Disabled_For__mdt.Metadata_Driven_Trigger__c"
+    label = "Metadata Driven Trigger"
+    _required = true
+    referenceTo = [
+      salesforce.Metadata_Driven_Trigger__mdt,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "Metadata_Driven_Trigger__r"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Email User_Email__c {
+    apiName = "Disabled_For__mdt.User_Email__c"
+    label = "User Email"
+    _required = true
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    _hidden_value = true
+  }
+}

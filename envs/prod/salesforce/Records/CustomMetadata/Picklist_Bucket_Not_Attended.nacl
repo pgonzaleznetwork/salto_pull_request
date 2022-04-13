@@ -1,0 +1,12 @@
+salesforce.CustomMetadata Picklist_Bucket_Not_Attended@uvu {
+  label = "Not Attended"
+  protected = false
+  fullName = "Picklist_Bucket.Not_Attended"
+  values = [
+    {
+      field = "Bucketed_Picklist__c"
+      value = "Attendance"
+      type = "xsd:string"
+    },
+  ]
+}

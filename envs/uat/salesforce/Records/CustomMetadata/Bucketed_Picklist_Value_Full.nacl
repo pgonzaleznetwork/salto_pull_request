@@ -1,0 +1,12 @@
+salesforce.CustomMetadata Bucketed_Picklist_Value_Full@uuv {
+  label = "Full"
+  protected = false
+  fullName = "Bucketed_Picklist_Value.Full"
+  values = [
+    {
+      field = "Picklist_Bucket__c"
+      value = "Attended"
+      type = "xsd:string"
+    },
+  ]
+}

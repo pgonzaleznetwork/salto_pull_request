@@ -1,0 +1,6 @@
+salesforce.ApexClass DevClass {
+  apiVersion = 54
+  status = "Active"
+  fullName = "DevClass"
+  content = file("salesforce/Records/ApexClass/DevClass.cls")
+}

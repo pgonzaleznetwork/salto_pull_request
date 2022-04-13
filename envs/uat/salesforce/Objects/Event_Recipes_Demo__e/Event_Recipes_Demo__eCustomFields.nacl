@@ -1,0 +1,49 @@
+type salesforce.Event_Recipes_Demo__e {
+  salesforce.Text accountId__c {
+    apiName = "Event_Recipes_Demo__e.accountId__c"
+    label = "accountId"
+    _required = true
+    createable = true
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 18
+    queryable = true
+    description = "This is the Salesforce Account Id that we should attach the image to."
+    externalId = false
+    isFilteringDisabled = "false"
+    isNameField = "false"
+    isSortingDisabled = "false"
+  }
+  salesforce.Text title__c {
+    apiName = "Event_Recipes_Demo__e.title__c"
+    label = "title"
+    _required = true
+    createable = true
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    externalId = false
+    isFilteringDisabled = "false"
+    isNameField = "false"
+    isSortingDisabled = "false"
+  }
+  salesforce.Text url__c {
+    apiName = "Event_Recipes_Demo__e.url__c"
+    label = "url"
+    _required = true
+    createable = true
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    description = "This field holds the image url to be added."
+    externalId = false
+    isFilteringDisabled = "false"
+    isNameField = "false"
+    isSortingDisabled = "false"
+  }
+}

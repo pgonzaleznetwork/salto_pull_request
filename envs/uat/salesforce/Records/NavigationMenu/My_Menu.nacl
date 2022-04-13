@@ -1,0 +1,13 @@
+salesforce.NavigationMenu My_Menu {
+  fullName = "My_Menu"
+  container = "support"
+  containerType = "Network"
+  label = "My Menu"
+  navigationMenuItem = {
+    label = "Home Page"
+    position = 1
+    publiclyAvailable = true
+    target = "https://salto.io"
+    type = "ExternalLink"
+  }
+}

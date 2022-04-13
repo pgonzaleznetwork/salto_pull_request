@@ -1,0 +1,32 @@
+salesforce.ApexClass MetadataTriggerService {
+  apiVersion = 54
+  status = "Active"
+  fullName = "MetadataTriggerService"
+  content = file("salesforce/Records/ApexClass/MetadataTriggerService.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Disabled_For__mdt
+    },
+    {
+      reference = salesforce.Disabled_For__mdt.field.Metadata_Driven_Trigger__c
+    },
+    {
+      reference = salesforce.Disabled_For__mdt.field.User_Email__c
+    },
+    {
+      reference = salesforce.Metadata_Driven_Trigger__mdt
+    },
+    {
+      reference = salesforce.Metadata_Driven_Trigger__mdt.field.Class__c
+    },
+    {
+      reference = salesforce.Metadata_Driven_Trigger__mdt.field.Enabled__c
+    },
+    {
+      reference = salesforce.Metadata_Driven_Trigger__mdt.field.Execution_Order__c
+    },
+    {
+      reference = salesforce.Metadata_Driven_Trigger__mdt.field.Object__c
+    },
+  ]
+}

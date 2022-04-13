@@ -1,0 +1,32 @@
+salesforce.ApexClass CustomMetadataUtilties {
+  apiVersion = 54
+  status = "Active"
+  fullName = "CustomMetadataUtilties"
+  content = file("salesforce/Records/ApexClass/CustomMetadataUtilties.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.CanTheUser
+    },
+    {
+      reference = salesforce.Bucketed_Picklist_Value__mdt
+    },
+    {
+      reference = salesforce.Bucketed_Picklist_Value__mdt.field.Picklist_Bucket__c
+    },
+    {
+      reference = salesforce.Bucketed_Picklist__mdt
+    },
+    {
+      reference = salesforce.Bucketed_Picklist__mdt.field.Field__c
+    },
+    {
+      reference = salesforce.Bucketed_Picklist__mdt.field.Object__c
+    },
+    {
+      reference = salesforce.Picklist_Bucket__mdt
+    },
+    {
+      reference = salesforce.Picklist_Bucket__mdt.field.Bucketed_Picklist__c
+    },
+  ]
+}

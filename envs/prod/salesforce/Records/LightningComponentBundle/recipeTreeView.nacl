@@ -1,0 +1,35 @@
+salesforce.LightningComponentBundle recipeTreeView {
+  apiVersion = 53
+  isExposed = true
+  targets = {
+    target = [
+      "lightning__AppPage",
+      "lightning__HomePage",
+    ]
+  }
+  fullName = "recipeTreeView"
+  lwcResources = {
+    lwcResource = [
+      {
+        source = file("salesforce/Records/LightningComponentBundle/recipeTreeView/recipeTreeView.html")
+        filePath = "lwc/recipeTreeView/recipeTreeView.html"
+      },
+      {
+        source = file("salesforce/Records/LightningComponentBundle/recipeTreeView/__mocks__/recipeTreeView.js")
+        filePath = "lwc/recipeTreeView/__mocks__/recipeTreeView.js"
+      },
+      {
+        source = file("salesforce/Records/LightningComponentBundle/recipeTreeView/recipeTreeView.js")
+        filePath = "lwc/recipeTreeView/recipeTreeView.js"
+      },
+    ]
+  }
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.RecipeTreeViewController
+    },
+    {
+      reference = salesforce.LightningComponentBundle.instance.errorPanel
+    },
+  ]
+}

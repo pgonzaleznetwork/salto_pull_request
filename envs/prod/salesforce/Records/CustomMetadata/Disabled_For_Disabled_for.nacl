@@ -1,0 +1,17 @@
+salesforce.CustomMetadata Disabled_For_Disabled_for@uvu {
+  label = "Disabled for"
+  protected = false
+  fullName = "Disabled_For.Disabled_for"
+  values = [
+    {
+      field = "Metadata_Driven_Trigger__c"
+      value = "MDTAccountTriggerHandler"
+      type = "xsd:string"
+    },
+    {
+      field = "User_Email__c"
+      value = "foo@bar.com"
+      type = "xsd:string"
+    },
+  ]
+}

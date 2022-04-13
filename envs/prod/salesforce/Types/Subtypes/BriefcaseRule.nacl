@@ -1,0 +1,173 @@
+type salesforce.BriefcaseRule {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  salesforce.BriefcaseRuleFilter briefcaseRuleFilters {
+  }
+  string filterLogic {
+  }
+  boolean isAscendingOrder {
+  }
+  string orderBy {
+    foreignKeyDomain = [
+      salesforce.CustomField,
+    ]
+  }
+  string parentRule {
+    foreignKeyDomain = [
+      salesforce.BriefcaseRule,
+    ]
+  }
+  number recordLimit {
+  }
+  string targetEntity {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Account",
+        "AccountBrand",
+        "AlternativePaymentMethod",
+        "ApiAnomalyEventStore",
+        "Asset",
+        "AssetAction",
+        "AssetActionSource",
+        "AssetRelationship",
+        "AssetStatePeriod",
+        "AssociatedLocation",
+        "AuthorizationForm",
+        "AuthorizationFormConsent",
+        "AuthorizationFormDataUse",
+        "AuthorizationFormText",
+        "BusinessBrand",
+        "Campaign",
+        "CampaignMember",
+        "CardPaymentMethod",
+        "Case",
+        "CaseRelatedIssue",
+        "ChangeRequest",
+        "ChangeRequestRelatedIssue",
+        "ChangeRequestRelatedItem",
+        "ChannelProgram",
+        "ChannelProgramLevel",
+        "ChannelProgramMember",
+        "CommSubscription",
+        "CommSubscriptionChannelType",
+        "CommSubscriptionConsent",
+        "CommSubscriptionTiming",
+        "ConsumptionRate",
+        "ConsumptionSchedule",
+        "Contact",
+        "ContactPointAddress",
+        "ContactPointConsent",
+        "ContactPointEmail",
+        "ContactPointPhone",
+        "ContactPointTypeConsent",
+        "ContactRequest",
+        "ContentVersion",
+        "Contract",
+        "ContractLineItem",
+        "CredentialStuffingEventStore",
+        "CreditMemo",
+        "CreditMemoInvApplication",
+        "CreditMemoLine",
+        "Customer",
+        "DandBCompany",
+        "DataUseLegalBasis",
+        "DataUsePurpose",
+        "DelegatedAccount",
+        "DigitalWallet",
+        "DuplicateRecordItem",
+        "DuplicateRecordSet",
+        "EmailMessage",
+        "EngagementChannelType",
+        "Entitlement",
+        "EntityMilestone",
+        "Event",
+        "FinanceBalanceSnapshot",
+        "FinanceTransaction",
+        "Idea",
+        "Image",
+        "Incident",
+        "IncidentRelatedItem",
+        "Individual",
+        "Invoice",
+        "InvoiceLine",
+        "Junction_Demo_1__c",
+        "Junction_Demo_2__c",
+        "Junction__c",
+        "Lead",
+        "LegalEntity",
+        "Location",
+        "LocationGroup",
+        "LocationGroupAssignment",
+        "LogEvent__c",
+        "Macro",
+        "Opportunity",
+        "OpportunityContactRole",
+        "OpportunityLineItem",
+        "Order",
+        "OrderItem",
+        "PartnerFundAllocation",
+        "PartnerFundClaim",
+        "PartnerFundRequest",
+        "PartnerMarketingBudget",
+        "PartyConsent",
+        "Payment",
+        "PaymentAuthAdjustment",
+        "PaymentAuthorization",
+        "PaymentGateway",
+        "PaymentGroup",
+        "PaymentLineInvoice",
+        "Pricebook2",
+        "PricebookEntry",
+        "Problem",
+        "ProblemIncident",
+        "ProblemRelatedItem",
+        "ProcessException",
+        "Product2",
+        "ProductConsumptionSchedule",
+        "QuickText",
+        "Recommendation",
+        "Refund",
+        "RefundLinePayment",
+        "ReportAnomalyEventStore",
+        "Scorecard",
+        "ScorecardAssociation",
+        "ScorecardMetric",
+        "Seller",
+        "ServiceContract",
+        "SessionHijackingEventStore",
+        "SocialPersona",
+        "Solution",
+        "Task",
+        "User",
+        "UserProvisioningRequest",
+        "WorkBadge",
+        "WorkBadgeDefinition",
+        "WorkOrder",
+        "WorkOrderLineItem",
+        "WorkPlan",
+        "WorkPlanTemplate",
+        "WorkPlanTemplateEntry",
+        "WorkStep",
+        "WorkStepTemplate",
+        "WorkThanks",
+      ]
+    }
+    foreignKeyDomain = [
+      "CustomObject",
+    ]
+  }
+  metadataType = "BriefcaseRule"
+}

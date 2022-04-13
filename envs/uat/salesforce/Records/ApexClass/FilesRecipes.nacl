@@ -1,0 +1,14 @@
+salesforce.ApexClass FilesRecipes {
+  apiVersion = 54
+  status = "Active"
+  fullName = "FilesRecipes"
+  content = file("salesforce/Records/ApexClass/FilesRecipes.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.CanTheUser
+    },
+    {
+      reference = salesforce.ContentVersion
+    },
+  ]
+}

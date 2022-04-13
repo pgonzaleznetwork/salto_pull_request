@@ -1,0 +1,95 @@
+salesforce.Layout Bucketed_Picklist__mdt_Bucketed_Picklist_Layout@uuubss {
+  fullName = "Bucketed_Picklist__mdt-Bucketed Picklist Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Bucketed_Picklist__mdt.field.MasterLabel
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Bucketed_Picklist__mdt.field.DeveloperName
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Bucketed_Picklist__mdt.field.Object__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Bucketed_Picklist__mdt.field.Field__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = "IsProtected"
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Bucketed_Picklist__mdt.field.NamespacePrefix
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = "CreatedById"
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = "LastModifiedById"
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "MasterLabel",
+        "DeveloperName",
+        "NamespacePrefix",
+      ]
+      relatedList = salesforce.Picklist_Bucket__mdt.field.Bucketed_Picklist__c
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.Bucketed_Picklist__mdt,
+  ]
+}

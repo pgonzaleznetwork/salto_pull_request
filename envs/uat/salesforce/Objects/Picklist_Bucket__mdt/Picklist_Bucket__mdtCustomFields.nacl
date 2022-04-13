@@ -1,0 +1,14 @@
+type salesforce.Picklist_Bucket__mdt {
+  salesforce.Lookup Bucketed_Picklist__c {
+    apiName = "Picklist_Bucket__mdt.Bucketed_Picklist__c"
+    label = "Bucketed Picklist"
+    referenceTo = [
+      salesforce.Bucketed_Picklist__mdt,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "Bucketed_Picklist__r"
+    queryable = true
+    _hidden_value = true
+  }
+}

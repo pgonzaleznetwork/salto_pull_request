@@ -1,0 +1,17 @@
+salesforce.CustomMetadata Bucketed_Picklist_Attendance@uv {
+  label = "Attendance"
+  protected = false
+  fullName = "Bucketed_Picklist.Attendance"
+  values = [
+    {
+      field = "Field__c"
+      value = "AttendanceStatus__c"
+      type = "xsd:string"
+    },
+    {
+      field = "Object__c"
+      value = "Contact"
+      type = "xsd:string"
+    },
+  ]
+}

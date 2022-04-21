@@ -12,5 +12,11 @@ envs {
         salesforce = "salesforce"
       }
     },
+    {
+      name = "dev"
+      accountToServiceName = {
+        salesforce = "salesforce"
+      }
+    },
   ]
 }
